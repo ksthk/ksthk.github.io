@@ -8,4 +8,4 @@ User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
 
-Sitemap: https://ksthk.github.io/al-folio/sitemap.xml
+Sitemap: https://ksthk.github.io/sitemap.xml
