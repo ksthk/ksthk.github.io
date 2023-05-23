@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Security Investigations and Research</a>.
+subtitle: <a href='#'>Security Investigations and Research</a>
 
 profile:
   align: right
@@ -16,7 +16,7 @@ profile:
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: false  # includes social icons at the bottom of the page
+social: true  # includes social icons at the bottom of the page
 ---
 
 Kris Oosthoek is a cyber security investigator with the Dutch government and guest researcher with Delft University of Technology. He holds a Computer Science PhD from Delft University of Technology. His research has focused on cybercriminal abuse of cryptocurrencies, as well as cyber threat intelligence. His current focus is the application of artificial intelligence in cyber security contexts. Kris has worked in various technical positions based from the US, UK and Afghanistan. He holds several commercial cyber security certifications such as CISSP, GICSP, GCTI, GXPN, GRID.
