@@ -1,373 +1,183 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://ksthk.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ksthk.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-05-23T10:51:55+00:00</updated><id>https://ksthk.github.io/feed.xml</id><title type="html">Kris Oosthoek PhD</title><subtitle>Academic profile page of Kris Oosthoek.
-</subtitle><entry><title type="html">a post with custom blockquotes</title><link href="https://ksthk.github.io/blog/2023/custom-blockquotes/" rel="alternate" type="text/html" title="a post with custom blockquotes" /><published>2023-05-12T19:53:00+00:00</published><updated>2023-05-12T19:53:00+00:00</updated><id>https://ksthk.github.io/blog/2023/custom-blockquotes</id><content type="html" xml:base="https://ksthk.github.io/blog/2023/custom-blockquotes/"><![CDATA[<p>This post shows how to add custom styles for blockquotes. Based on <a href="https://github.com/sighingnow/jekyll-gitbook">jekyll-gitbook</a> implementation.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://ksthk.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ksthk.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-05-26T05:52:54+00:00</updated><id>https://ksthk.github.io/feed.xml</id><title type="html">Kris Oosthoek PhD</title><subtitle>Academic profile page of Kris Oosthoek.
+</subtitle><entry><title type="html">Displaying External Posts on Your al-folio Blog</title><link href="https://ksthk.github.io/blog/2022/displaying-external-posts-on-your-al-folio-blog/" rel="alternate" type="text/html" title="Displaying External Posts on Your al-folio Blog" /><published>2022-04-23T23:20:09+00:00</published><updated>2022-04-23T23:20:09+00:00</updated><id>https://ksthk.github.io/blog/2022/displaying-external-posts-on-your-al-folio-blog</id><content type="html" xml:base="https://ksthk.github.io/blog/2022/displaying-external-posts-on-your-al-folio-blog/"><![CDATA[]]></content><author><name></name></author></entry><entry><title type="html">Actionable Intelligence</title><link href="https://ksthk.github.io/blog/2021/actionable-intelligence/" rel="alternate" type="text/html" title="Actionable Intelligence" /><published>2021-10-02T13:06:52+00:00</published><updated>2021-10-02T13:06:52+00:00</updated><id>https://ksthk.github.io/blog/2021/actionable-intelligence</id><content type="html" xml:base="https://ksthk.github.io/blog/2021/actionable-intelligence/"><![CDATA[<p>Cyber Threat Intelligence (CTI) produces evidence-based knowledge on cyber threats and their implications within their relevant context, including actionable advice. With the technical landmark of the APT-1 report in 2013, CTI took off and it has contributed to society (Bellingcat’s MH-17 investigation) and diplomacy (Joint EU Diplomatic Response to Malicious Cyber Activities).</p>
 
-<p>We decided to support the same custom blockquotes as in <a href="https://sighingnow.github.io/jekyll-gitbook/jekyll/2022-06-30-tips_warnings_dangers.html">jekyll-gitbook</a>, which are also found in a lot of other sites’ styles. The styles definitions can be found on the <a href="https://github.com/alshedivat/al-folio/blob/master/_sass/_base.scss">_base.scss</a> file, more specifically:</p>
+<p>By now every larger organisation incorporates CTI in some fashion to improve security decision-making and detection. In that sense we have all heard CTI is an activity rather than something you buy, but it is time- and labour-intensive. Most of us don’t have dedicated resources to build threat landscapes and assessments. How to produce actionable intelligence when time and resources are scarce? In a position paper <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> on CTI we have pointed out the pitfalls of CTI, and in this article we provide some guidance on how to avoid them.</p>
 
-<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* Tips, warnings, and dangers */</span>
-<span class="nc">.post</span> <span class="nc">.post-content</span> <span class="nt">blockquote</span> <span class="p">{</span>
-    <span class="k">&amp;</span><span class="nc">.block-tip</span> <span class="p">{</span>
-    <span class="nl">border-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-tip-block</span><span class="p">);</span>
-    <span class="nl">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-tip-block-bg</span><span class="p">);</span>
+<p><strong>Creating actionable intelligence</strong>
+Intelligence is mere information if it isn’t actionable. We need interpretation. Interpretation facilitates action and distinguishes intelligence from mere data. Interpretation takes the organisation’s context into account and makes it actionable and useful input for decision-making. While many industry entities promise to deliver accurate CTI off the shelf, these offerings only work as fancy blacklists without in-house interpretation. An organisation’s CTI function will usually cater towards various internal stakeholders, such as C-level executives, security operations, vulnerability management and IT/security architects. All of these have different contexts and different views on actionability. On the one hand, we almost drown in CTI given the volume of threat reports and indicators pushed through feeds daily. On the other hand, internal data remains mostly untapped as potential sources of CTI. Regardless of our individual CTI priorities, we suffer from information overload. How to deal with this?</p>
 
-    <span class="nt">p</span> <span class="p">{</span>
-      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-tip-block-text</span><span class="p">);</span>
-    <span class="p">}</span>
+<p><strong>Actioning the Intelligence Cycle</strong>
+We are all familiar with the Intelligence Cycle as originally put out by the US Department of Defense. A common complaint is that it is too abstract to serve as a basis for a CTI practice. For this reason, we provide practical recommendations per phase of the Intelligence Cycle.</p>
 
-    <span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span> <span class="p">{</span>
-      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-tip-block-title</span><span class="p">);</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
+<p><img src="cycle.png" alt="The (Actionable) Intelligence Cycle" /></p>
 
-  <span class="k">&amp;</span><span class="nc">.block-warning</span> <span class="p">{</span>
-    <span class="nl">border-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-warning-block</span><span class="p">);</span>
-    <span class="nl">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-warning-block-bg</span><span class="p">);</span>
+<p><strong>Planning and direction</strong>
+It’s easy to hoard a firehose of whatever data is available, free feeds or the daily stream of reports. This also is a sure-fire way to an expensive SIEM bill for your SOC, and cognitive overload for your analysts. Consider only collecting data against pre-set goals based on stakeholder requirements, optionally formally established and signed-off as (Priority) Intelligence Requirements. Examples are threats specific to network infrastructure components or unique to your organisation’s industry vertical, which may be collected via feeds or reports. In case you decide to procure data to fulfil one or more requirements, be aware that because of sharing agreements between different vendors, you could end up paying for the same intelligence twice <sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>. Inform yourself about the origin of data upfront. From what type of sensors is the data sourced, where are these located? How much data is unique proportionally to what you’re already collecting? What is its half-life according to the provider?</p>
 
-    <span class="nt">p</span> <span class="p">{</span>
-      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-warning-block-text</span><span class="p">);</span>
-    <span class="p">}</span>
+<p><strong>Collection</strong>
+For collection, many think primarily of feeds, but the most popular OSINT feeds have been shown to have more than three weeks’ delay reporting IoCs and to be highly biased due to specific collection methods of the supplier <sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup>. This implies that if you are collecting feeds as part of an early-warning strategy, the value of feeds is more limited than you think. Also the quality of commercial data has been questioned as vendors have very scarce coverage of the threats on which they focus <sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup>. OSINT is still a viable option, but there is more than feeds. A Twitter scraper like Twint or a web scraper such as Scrapy can allow for more targeted and timely collection on specific ATT&amp;CK techniques or CVEs that are a concern to your organisation.</p>
 
-    <span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span> <span class="p">{</span>
-      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-warning-block-title</span><span class="p">);</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
-
-  <span class="k">&amp;</span><span class="nc">.block-danger</span> <span class="p">{</span>
-    <span class="nl">border-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-danger-block</span><span class="p">);</span>
-    <span class="nl">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-danger-block-bg</span><span class="p">);</span>
-
-    <span class="nt">p</span> <span class="p">{</span>
-      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-danger-block-text</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span> <span class="p">{</span>
-      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-danger-block-title</span><span class="p">);</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>A regular blockquote can be used as following:</p>
-
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; This is a regular blockquote</span>
-<span class="gt">&gt; and it can be used as usual</span>
-</code></pre></div></div>
+<p><strong>Processing and exploitation</strong>
+Most of the challenges with processing are technical, centring on parsing and manipulating technical data into a supported format, or separating signal from the noise you might get from scrapers used to collect data from social media and other internet sources. When catering to an SOC, ideally CTI is only fed into an SIEM after analysis. In practice, processing and exploitation is often automated aggregation, parsing and enrichment, which doesn’t receive much reconsideration. But this phase is key to maximising the success of your CTI effort if you think about the half-life of indicators to avoid false positives. Deprecation should be source- and indicator-dependent. Who was the reporting source? And where does the indicator point? If it is cloud infrastructure or a short-lived DGA domain, the half-life is generally shorter. When deciding about automatic deprecation based on half-life, also consider versioning. Are you able to roll back and assess impact in case automatic deletion goes awry?</p>
 
 <blockquote>
-  <p>This is a regular blockquote
-and it can be used as usual</p>
+  <p>“Be aware of what we call the false negatives gap. You want to have an approximation of the parts of your threat landscape that aren’t visible to you”</p>
 </blockquote>
 
-<p>These custom styles can be used by adding the specific class to the blockquote, as follows:</p>
+<p><strong>Analysis and production</strong>
+Analysis is the hardest nut to crack. Many are vocal in their opinions when it comes to analysis, but it is tough to give practical guidance as it is a custom in-house process. Many conference talks provide lip service to Structured Analytic Techniques, a concept from the Intelligence Community.</p>
+
+<p>But don’t be fooled by using standard methodology, because recent research shows mixed evidence on the reduction of confirmation biases and even shows it may increase (!) judgment inconsistency and error <sup id="fnref:5" role="doc-noteref"><a href="#fn:5" class="footnote" rel="footnote">5</a></sup>. Whatever methodology you use, it needs to fit your organisation’s internal processes, asset landscape and response strategy. Whatever methodology you use doesn’t really matter, as long as it is applied consistently by analysts, as consistent output is central to methodology. This is a question of training, which also includes making analysts familiar with the asset landscape, infrastructure design and response processes.</p>
+
+<p>For strategic analysis, be aware that many of the freely-available commercial reports are potentially useful, but are produced primarily for advertising purposes, which has been shown to introduce systemic bias <sup id="fnref:6" role="doc-noteref"><a href="#fn:6" class="footnote" rel="footnote">6</a></sup>. Bias is almost implicit in specific collection techniques, but it isn’t harmful per se. You can have bias work for you by employing it as a deliberate focus. Depending on your threat landscape, you might like to increase focus by prioritising or sunsetting biased sources.</p>
+
+<p>If you like to use one parameter to determine whether to pivot further during analysis, look for prevalence. Many reports exist, but it is often unclear whether they are based on single events or already widespread. Based on this, you can look into other parameters such as targeting, victims and impact. Furthermore, be aware of what we call the false negatives gap. You want to have an approximation of the parts of your threat landscape that aren’t visible to you. We tend to focus on false and true positives in the raw data we collect, but also be aware of what you do not see and how this implicates your CTI, but also your alerting strategy. You might like to prioritise threat hunting efforts to focus on these indicator twilight zones.</p>
+
+<p><strong>Dissemination and integration</strong>
+If you want your SIEM to function as the single pane of glass it is supposed to be, good analysis is critical prior to dissemination to avoid false positives or alert overload. Be especially careful with adding CTI to your Security Orchestration, Automation and Response (SOAR) solution. Make sure it is analysed properly, as due to an SOAR’s integration and automated workflow with other tools, these solutions are force multipliers of false positives. In this case, running simulation tests with actual CTI datasets makes even more sense.</p>
+
+<p>For dissemination of CTI to external partners, research proves what most of us observe in practice: sharing is scaring. The transaction cost of engaging, establishing quality and accuracy of shared data and risks of violating privacy and anti-trust laws are common barriers <sup id="fnref:7" role="doc-noteref"><a href="#fn:7" class="footnote" rel="footnote">7</a></sup>. This where the primary indicator of successful participation in sharing is perceived value and reciprocity belief <sup id="fnref:8" role="doc-noteref"><a href="#fn:8" class="footnote" rel="footnote">8</a></sup>. Privacy-enhancing technology such as zero-knowledge proof can however serve as an enabling solution to these issues.</p>
+
+<p><strong>Evaluation and feedback</strong></p>
+
+<p>This final step is a cost-benefit analysis that also evaluates how to increase the benefits. The total cost of ownership (TCO) of CTI must be compared against the return on investment (ROI) of efforts such as a Threat Intelligence Platform (TIP) and commercial feeds. Just like security in general, CTI is an insurance policy against bad stuff. Though quantifying its returns can prove challenging, reduction of Mean Time To Detect (MTTD), Mean Time to Respond (MTTR) and overall dwell time can serve as parameters here.</p>
+
+<p>On a daily basis, the Key Performance Indicator (KPI) of strategic CTI efforts is whether it influenced or helped with the decision at hand. For IoCs, this a question of true-/false-positive ratio. Expensive commercial feeds have a higher TCO than OSINT feeds, thus they should be judged differently. If OSINT is the meat and potatoes, commercial feeds must be the cream of the crop. Their cost can be justified by their focus on actors and TTPs that matter to you specifically. If they don’t, consider what their added value is. At the end of the day, talking with industry partners and competitors is still free. Potentially high transaction costs mean it is not cheap, but it can yield highly relevant results.</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; ##### TIP</span>
-<span class="gt">&gt;</span>
-<span class="gt">&gt; A tip can be used when you want to give advice</span>
-<span class="gt">&gt; related to a certain content.</span>
-{: .block-tip }
-</code></pre></div></div>
+<p>On <a href="https://www.cyber-threat-intelligence.com/publications/">our lab’s Publications page</a>, full versions of other CTI-related work can be found.</p>
+
+<p><em>This article was originally published in <a href="https://emagazine.one-conference.nl/2021/actionable-intelligence-how-to-make-cyber-threat-intelligence-work-for-you/">One Magazine 2021</a></em></p>
 
-<blockquote class="block-tip">
-  <h5 id="tip">TIP</h5>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>https://doi.org/10.1080/08850607.2020.1780062 <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>https://academic.oup.com/cybersecurity/article/4/1/tyy008/5245383 <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>https://www.cyber-threat-intelligence.com/publications/ACNS2019-feedtimelineness.pdf <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnote">
+      <p>https://www.usenix.org/conference/usenixsecurity20/presentation/bouwman <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:5" role="doc-endnote">
+      <p>https://onlinelibrary.wiley.com/doi/full/10.1002/acp.3550 <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:6" role="doc-endnote">
+      <p>https://www.tandfonline.com/doi/full/10.1080/19331681.2020.1776658 <a href="#fnref:6" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:7" role="doc-endnote">
+      <p>https://dl.acm.org/doi/abs/10.1145/3339252.3340528 <a href="#fnref:7" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:8" role="doc-endnote">
+      <p>https://www.sciencedirect.com/science/article/pii/S074756322030011X#sec5 <a href="#fnref:8" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name></name></author><category term="research-papers" /><category term="cti" /><summary type="html"><![CDATA[How to make Cyber Threat Intelligence work for you]]></summary></entry><entry><title type="html">What’s wrong with Cyber Threat Intelligence</title><link href="https://ksthk.github.io/blog/2020/whats-wrong-with-cti/" rel="alternate" type="text/html" title="What’s wrong with Cyber Threat Intelligence" /><published>2020-07-14T13:03:20+00:00</published><updated>2020-07-14T13:03:20+00:00</updated><id>https://ksthk.github.io/blog/2020/whats-wrong-with-cti</id><content type="html" xml:base="https://ksthk.github.io/blog/2020/whats-wrong-with-cti/"><![CDATA[<p>Over the last decade the field of Cyber Threat Intelligence (CTI) has emerged, which aims to preempt cyber threats by combining aspects from Computer Science and the Intelligence field. Something like Risk Management, but less dusty, practical, operational and able to deal with a highly dynamic environment. Many former antivirus vendors have shifted gears to become commercial intelligence providers, conducting what is effectively counter intelligence analysis against cyber threat actors. As such, CTI has taken a significant role in daily cyber security practice.</p>
 
-  <p>A tip can be used when you want to give advice
-related to a certain content.</p>
-</blockquote>
+<p>Together with <a href="https://www.cyber-threat-intelligence.com/people/christian">Christian Doerr</a>, I have written a position paper arguing that CTI is a valuable addition to the cyber security field, but it is still in its infancy. Because of that, it often delivers flawed analysis. If you’re a CTI analyst, you might argue this is all pretty obvious stuff, but it isn’t. From a scientific perspective, most of our practice finds little empirical support and much of what we take as ‘facts’ is really not more than an opinion.</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; ##### WARNING</span>
-<span class="gt">&gt;</span>
-<span class="gt">&gt; This is a warning, and thus should</span>
-<span class="gt">&gt; be used when you want to warn the user</span>
-{: .block-warning }
-</code></pre></div></div>
+<p>The paper was peer-reviewed by the International Journal of Intelligence and CounterIntelligence and has been published today. It is released as Open Access, so no annoying academic paywall and available to read <a href="https://doi.org/10.1080/08850607.2020.1780062">here</a>. It includes an overview of what CTI is, its origination and the challenges and potential it holds. As usual for a position paper, pointing out the field’s challenges serves to identify areas for future research. CTI is rich in tools and technological knowledge, but poor on standardization and methodology. A better product follows a better process.</p>
 
-<blockquote class="block-warning">
-  <h5 id="warning">WARNING</h5>
+<p>Below a quick rundown of the challenges identified in our analysis, which are discussed in more length in the <a href="https://doi.org/10.1080/08850607.2020.1780062">paper</a>:</p>
 
-  <p>This is a warning, and thus should
-be used when you want to warn the user</p>
-</blockquote>
+<ul>
+  <li><strong>CTI is lacking methodology:</strong> Sherman Kent’s <a href="https://www.cia.gov/library/kent-center-occasional-papers/vol1no5.htm">Analytic Doctrine</a><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>, Richards Heuer’s <a href="https://www.cia.gov/library/center-for-the-study-of-intelligence/csi-publications/books-and-monographs/psychology-of-intelligence-analysis">Psychology of Intelligence Analysis</a><sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> and Structured Analytic Techniques<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup>. You’ve probably heard about them. Many conference presentations provide lip service to these works to indicate scientific rigor which really isn’t there. Who does ACH in practice? Almost no-one. Actually, its effectiveness has proven to be <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/acp.3550">questionable</a><sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup> at best.</li>
+  <li><strong>CTI is shared but hardly being used:</strong> we go into the relationship between the hacks of the Democratic National Committee and the German Bundestag and how this is actually a case of flawed CTI. Furthermore, we discuss the complications for sharing due to the Traffic Light Protocol and sharing communities such as ISACs.</li>
+  <li><strong>CTI is generally of low quality:</strong> indicator feeds report malicious activity months after the first observance and are biased towards specific countries. Most sharing takes place in the bottom of the <a href="http://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html">Pyramid of Pain</a><sup id="fnref:5" role="doc-noteref"><a href="#fn:5" class="footnote" rel="footnote">5</a></sup>. Complete TTPs are hard to share in a machine-readable way. Mitre ATT&amp;CK is a first step in the right direction, but as a field we still need to progress significantly towards standardisation. We need to reach our full potential, or much of our initiatives will end up as yet another compliance effort providing limited value.</li>
+  <li><strong>CTI vendors are untransparent in their supply:</strong> do you know how your vendor gets to a certain assessment? How their raw intel was sourced? How their sensor base is distributed and thus potentially biased? Probably not. While sources do not need to be identified, it is currently unclear in many cases when a threat is novel or already has been reported on by another party under a different label. Vendor reports being more marketing material than actual intelligence doesn’t help here.</li>
+  <li><strong>CTI is too biased:</strong> from a commercial perspective, vendors like to focus on the big state actors, which are actually a less likely threat for many of us than low-level cyber-criminal actors. The bulk of the vendor reporting focuses on a very small subset of threats which make for entertaining reading, but isn’t very relevant to most of our daily practice.</li>
+  <li><strong>CTI attribution is difficult:</strong> Fancy Bear, APT-28, Sofacy, STRONTIUM, Sednit, Tsar Team, Swallowtail, Pawn Storm, TG-4127, Grizzly Steppe. Do you still follow this? These are all names for the same actor group. And while attribution is difficult and in many cases not more than a marketing stunt, which is a different ball game. Attribution should be left to government intelligence agencies.</li>
+</ul>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; ##### DANGER</span>
-<span class="gt">&gt;</span>
-<span class="gt">&gt; This is a danger zone, and thus should</span>
-<span class="gt">&gt; be used carefully</span>
-{: .block-danger }
-</code></pre></div></div>
+<p>Needless to say the above is a clickbaity representation of the more nuanced discussion in our paper, available for everyone <a href="https://doi.org/10.1080/08850607.2020.1780062">here</a>. For the <a href="https://cyber-threat-intelligence.com">lab</a>, this is where we hope to contribute with our research in the coming years. Because as indicated in the latter part of the paper, it isn’t all that bad as the CTI field has already contributed much to cyber security and remains one of the most promising concepts for the years to come. Yet we improve through critical introspection and self-examination, not through praise and worship of established phenomenons.</p>
 
-<blockquote class="block-danger">
-  <h5 id="danger">DANGER</h5>
+<p><img src="cozyfancybear.jpg" alt="Bears all the way down" /></p>
 
-  <p>This is a danger zone, and thus should
-be used carefully</p>
-</blockquote>]]></content><author><name></name></author><category term="sample-posts" /><category term="blockquotes" /><summary type="html"><![CDATA[an example of a blog post with custom blockquotes]]></summary></entry><entry><title type="html">a post with table of contents on a sidebar</title><link href="https://ksthk.github.io/blog/2023/sidebar-table-of-contents/" rel="alternate" type="text/html" title="a post with table of contents on a sidebar" /><published>2023-04-25T14:14:00+00:00</published><updated>2023-04-25T14:14:00+00:00</updated><id>https://ksthk.github.io/blog/2023/sidebar-table-of-contents</id><content type="html" xml:base="https://ksthk.github.io/blog/2023/sidebar-table-of-contents/"><![CDATA[<p>This post shows how to add a table of contents as a sidebar.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Davis, Jack. Sherman Kent and the profession of intelligence analysis. Central Intelligence Agency Washington DC, 2002. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>Heuer, Richards J. Psychology of intelligence analysis. Center for the Study of Intelligence, 1999. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>Heuer Jr, Richards J., Richards J. Heuer, and Randolph H. Pherson. Structured analytic techniques for intelligence analysis. Cq Press, 2010. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnote">
+      <p>Dhami, Mandeep K., Ian K. Belton, and David R. Mandel. “The “analysis of competing hypotheses” in intelligence analysis.” Applied Cognitive Psychology 33.6 (2019): 1080-1090. <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:5" role="doc-endnote">
+      <p>Bianco, David. “The pyramid of pain.” Enterprise Detection &amp; Response (2013). <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name></name></author><category term="research-papers" /><summary type="html"><![CDATA[Summary - Position Paper on the Challenges of the CTI Field]]></summary></entry><entry><title type="html">Security Recommendations for Bitcoin hodlers</title><link href="https://ksthk.github.io/blog/2020/security/" rel="alternate" type="text/html" title="Security Recommendations for Bitcoin hodlers" /><published>2020-04-07T12:58:47+00:00</published><updated>2020-04-07T12:58:47+00:00</updated><id>https://ksthk.github.io/blog/2020/security</id><content type="html" xml:base="https://ksthk.github.io/blog/2020/security/"><![CDATA[<p>After my appearance on the <a href="https://krisk.io/post/cryptocast/">Cryptocast</a> where my recent <a href="https://krisk.io/post/btc-threats/">research article</a> was discussed, I received a few PMs through Twitter and LinkedIn, with general or specific questions on what my recommendations to Bitcoin hodlers who want to improve their security would be. To follow up on that I wrote this blog post to describe some general steps you can take. Please note that security is always dependent on personal circumstances and risk appetite, just like your investment decisions are.</p>
 
-<h2 id="adding-a-table-of-contents">Adding a Table of Contents</h2>
+<p>But first a little rant on non-cyber, but equally important operational security. Not beating around the bush: it really amazes me how many people still openly tell how many Bitcoin they’re holding. They even seem to like this, while most of the (same) people are pretty reluctant to disclose the amount of dollars or euro’s in their bank account or the cumulative value of their stock equity portfolio. Of course this is common sense, which is why I don’t get that many people are still bragging at birthday and office parties about the number of full Bitcoin they’re holding. <em>Just don’t do it.</em> If you want to have a better reason, take a look at <a href="https://github.com/jlopp/physical-bitcoin-attacks/blob/master/README.md">Jameson Lopp’s Github repo</a>, where he keeps track of all physical attacks to steal Bitcoin.</p>
 
-<p>To add a table of contents to a post as a sidebar, simply add</p>
-<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">toc</span><span class="pi">:</span>
-  <span class="na">sidebar</span><span class="pi">:</span> <span class="s">left</span>
-</code></pre></div></div>
-<p>to the front matter of the post. The table of contents will be automatically generated from the headings in the post. If you wish to display the sidebar to the right, simply change <code class="language-plaintext highlighter-rouge">left</code> to <code class="language-plaintext highlighter-rouge">right</code>.</p>
+<h2 id="hardware-wallet">Hardware wallet</h2>
+<p>Storing your Bitcoin on a hardware wallet is simply the go-to security recommendation for most people. Sure, storing your Bitcoin on your own full node can be more secure and offer more functionality, but you’ll have to appreciate to get a bit geeky at times, as your node needs to be kept up to date. Optionally, look at multisig wallets such as Electrum or Carbon Wallet.  While your at it, create a new address for each transaction. This is a functionality most hardware wallets have now.</p>
 
-<h3 id="example-of-sub-heading-1">Example of Sub-Heading 1</h3>
+<p>Overall, it makes sense to opt for a hardware wallet of which the software is open source, because this increases the auditability of the software. Based on this, any Trezor is preferred above Ledger, as Ledger is based on proprietary software. This means Ledger’s wallet software is effectively a black box and its security can only be audited on behalf of Ledger. You think Trezor’s limited altcoin support is a downside? If you want to get scammed through shitcoins, why store them properly anyway? ;)  Regardless of the hardware wallet you use, store it in a safe place.</p>
 
-<p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>
+<p>Many people are still carrying their wallet on their keyring in the assumption this is safe as one still needs a BIP39 passphrase in addition to physical access. This is true, but side-channel style attacks are reported for most hardware wallets such as this one for the <a href="https://blog.kraken.com/post/3662/kraken-identifies-critical-flaw-in-trezor-hardware-wallets/">Trezor</a> and this one for the <a href="https://media.ccc.de/v/35c3-9563-wallet_fail">Ledger</a>.</p>
 
-<h3 id="example-of-another-sub-heading-1">Example of another Sub-Heading 1</h3>
+<h2 id="adblocker">Adblocker</h2>
+<p>It makes good sense to use an ad-blocking browser extension. <a href="https://github.com/gorhill/uBlock">uBlock Origin</a> would be my go-to recommendation here, as it is compatible with most browsers. While the revenue model of many websites run on advertising income, over the years online advertisements have also been used to serve malware and to invade user privacy unnecessarily. From the Binance hack last summer we know that users were attacked through Google Ads that were served on top of the Google result for the actual Binance login page. These ads linked to phishing login pages that captured the user’s credentials, after which the attackers could exfiltrate funds from their Binance custodian wallet.</p>
 
-<p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>
+<p>If you want to take ad-blocking a step further, you can also take this out of the browser and save precious CPU cycles by installing <a href="https://github.com/AdguardTeam/AdGuardHome">Pi-hole</a> or <a href="https://github.com/AdguardTeam/AdGuardHome">AdGuard Home</a> on a Raspberry Pi. As these solutions live in your network, they block ads for all your network devices and also allow for additional privacy through DNS over HTTPS.</p>
 
-<h2 data-toc-text="Customizing" id="customizing-your-table-of-contents">Customizing Your Table of Contents</h2>
+<h2 id="other-browser-extensions">Other browser extensions</h2>
+<p>Apart from a trustworthy adblocker, be highly selective towards the browser extensions you choose to use. It is good security practice to only enable those you really use. Countless stories of users of malicious Trezor browser extensions who have lost money have passed my Twitter feed, like <a href="https://cointelegraph.com/news/fake-ledger-chrome-extensions-continue-to-steal-crypto-from-victims">this recent one</a>. Even if you’re using an array of browser extensions of which you’re pretty sure they’re safe, each of them introduces an additional attack surface through common bugs such as XSS vulnerabilities.</p>
 
-<p>If you want to learn more about how to customize the table of contents of your sidebar, you can check the <a href="https://afeld.github.io/bootstrap-toc/">bootstrap-toc</a> documentation. Notice that you can even customize the text of the heading that will be displayed on the sidebar.</p>
+<h2 id="dedicated-email">Dedicated email</h2>
+<p>Over the past years, many popular services have been breached, through which credentials of hundreds millions of users have been made available online. <a href="https://haveibeenpwned.com/">On Have I Been Pwned</a>, you can check if your account got compromised through one of the breaches that have been publicly disclosed. In most cases this means that the combination of your username and password for this service is now available to bad actors. For people who recycle their passwords with very limited variation throughout multiple services, you now have a higher risks to have your other accounts breached as well. In anyway you need to be cautious, as this is juicy stuff for bad actors as Brian Krebs has <a href="https://krebsonsecurity.com/2013/06/the-value-of-a-hacked-email-account/">explained perfectly</a>.</p>
 
-<h3 id="example-of-sub-heading-2">Example of Sub-Heading 2</h3>
+<p>So if you want to take an additional step towards increasing your Bitcoin security, create a dedicated email account for your Bitcoin related stuff. This significantly decreases the risk of collateral financial damage if one of your social media accounts gets hacked. If you want to set yourself up for the future, create an account with <a href="https://protonmail.com/">ProtonMail</a> or <a href="https://www.startmail.com/en/">StartMail</a>, which are known not to practise upon your privacy.</p>
 
-<p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>
+<h2 id="strong-unique-passwords-and-2fa">Strong, unique passwords and 2FA</h2>
+<p>This recommendation goes hand in hand with the one above. Never re-use passwords and make them so complex that you can’t remember them. For this, you can use a password manager such as <a href="https://keepass.info/">KeePass</a> (local) or <a href="https://bitwarden.com/">BitWarden</a>. Of course, also choose a strong master password.</p>
 
-<h3 id="example-of-another-sub-heading-2">Example of another Sub-Heading 2</h3>
+<p>It is also recommended to enable second-factor authentication at all services supporting this. Usually this means you will need to enter a TOTP password that gets generated through an algorithm supported by apps such as Google Authenticator. In addition to this, if you already own a hardware wallet that supports U2F, you can also use that device to do this.  Please be very cautious at using SMS codes as a second authentication step. Some telecom operators are known to be vulnerable to SIM swapping. If you’re with one of those operators, this means an impersonator can request a new SIM card for your phone number, after which he might be able to control your online accounts as some websites use your phone number for identification.</p>
 
-<p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>]]></content><author><name></name></author><category term="sample-posts" /><category term="toc" /><category term="sidebar" /><summary type="html"><![CDATA[an example of a blog post with table of contents on a sidebar]]></summary></entry><entry><title type="html">a post with audios</title><link href="https://ksthk.github.io/blog/2023/audios/" rel="alternate" type="text/html" title="a post with audios" /><published>2023-04-25T10:25:00+00:00</published><updated>2023-04-25T10:25:00+00:00</updated><id>https://ksthk.github.io/blog/2023/audios</id><content type="html" xml:base="https://ksthk.github.io/blog/2023/audios/"><![CDATA[<p>This is an example post with audios. It supports local audio files.</p>
+<h2 id="linux">Linux</h2>
+<p>The use of Linux for your interaction with any Bitcoin-related services will drastically decrease your attack surface. While Windows is a perfect OS if you keep it up to date, an installation with many user-installed applications is less secure than a Linux distro with only applications from the second-party respository (e.g. Main in Ubuntu, which is maintained and supported by Canonical). This doesn’t need to be a drastic overhaul: most distros can be run ‘live’ from USB storage. This is ideal to boot up for your Bitcoin stuff. If you want to take this a step further, you can also boot up <a href="https://en.wikipedia.org/wiki/Tails_(operating_system)">Tails</a> to browse via Tor.</p>
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
+<h2 id="vpn-really">VPN, really?</h2>
+<p>Is using a VPN service safe? Well, this depends on your threat model. Out of privacy concern, many people think they are better of surfing via a VPN service that costs them a few bucks a month. The competition in the VPN market is fierce, so the prices are unrealistically low. I would argue here that when it looks to good to be true, it also is. Your ISP, especially if you live in Europe, is bound to strict privacy regulations such as the GDPR. Many VPN providers show off with servers located in DCs in plenty countries internationally, but regardless of the country you connect to, you aren’t routing your DNS traffic with your ISP anymore, but through a shady entity usually located legally in jurisdictions known as tax havens, not known for their excellent privacy legislation.</p>
 
-  <audio src="/assets/audio/epicaly-short-113909.mp3" controls="" />
+<p>Of course this is different if you’re interacting with your Bitcoin via wifi. At least make sure the service you’re using is encrypting traffic with a SSL/TLS certificate (the well-known green padlock symbol in your browser’s address bar). You can enforce this by using the HTTPS Everywhere browser extension.</p>
 
-</figure>
+<h2 id="closing-thought">Closing thought</h2>
+<p>Each security measure you take affects ease of use. It is up to you which tail risks you judge acceptable. This normally depends on how many Bitcoin or satoshi’s you’ll have to secure and their significance towards the rest of your capital. But as a rule of thumb, never believe in something that is too good to be true. For example, only last week it appeared that quite some users had been lured into using a <a href="https://nakedsecurity.sophos.com/2020/04/01/qr-code-generator-scam-steals-thousands-in-bitcoin/">fake QR code generator</a> for Bitcoin. This relatively simply deployed scam proved to be quite lucrative. Treat fancy tools like these like black boxes. They are abstraction layers, which are a potential risk: if you don’t know what’s going on internally, don’t use it. ﻿</p>]]></content><author><name></name></author><category term="research-promotion" /><category term="Bitcoin," /><category term="Security" /><summary type="html"><![CDATA[As follow-up on my Cryptocast appearance, some security recommendations for Bitcoin hodlers that don't break the bank (your own bank).]]></summary></entry><entry><title type="html">BNR Cryptocast</title><link href="https://ksthk.github.io/blog/2020/bnr-cryptocast/" rel="alternate" type="text/html" title="BNR Cryptocast" /><published>2020-04-04T13:00:57+00:00</published><updated>2020-04-04T13:00:57+00:00</updated><id>https://ksthk.github.io/blog/2020/bnr-cryptocast</id><content type="html" xml:base="https://ksthk.github.io/blog/2020/bnr-cryptocast/"><![CDATA[<p>Today I was a guest on the Cryptocast, a podcast primarily on Bitcoin by Dutch radio station BNR Newsradio. Regularly episodes are recorded in the BNR studios, but this one ran remotely due to the social distancing measures currently in force to tackle COVID-19.</p>
 
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
+<p>During the show we go over some TA (technical analysis) on the current Bitcoin price, this week&#8217;s crypto news, such as Binance&#8217;s M&amp;A of Coinmarketcap and go into some of the nitty gritty of my recent research paper, which is available for download <a href="hacks.pdf">here</a>.</p>
 
-  <audio src="https://cdn.pixabay.com/download/audio/2022/06/25/audio_69a61cd6d6.mp3" controls="" />
+<p>You can listen to the podcast via regular podcatchers such as Apple Podcasts or stream the audio from <a href="https://www.bnr.nl/podcast/cryptocast/10406648/cryptobeurzen-worden-veiliger-maar-het-kan-veel-beter">BNR&#8217;s website</a>. This one has the best audio quality. It is also on YouTube, which includes the Zoom gallery view and some screenshares, but worse audio:</p>]]></content><author><name></name></author><category term="research-promotion" /><category term="Cryptocast," /><category term="Bitcoin," /><category term="Hacks" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">From Hodl to Heist</title><link href="https://ksthk.github.io/blog/2020/hacks/" rel="alternate" type="text/html" title="From Hodl to Heist" /><published>2020-03-21T12:57:08+00:00</published><updated>2020-03-21T12:57:08+00:00</updated><id>https://ksthk.github.io/blog/2020/hacks</id><content type="html" xml:base="https://ksthk.github.io/blog/2020/hacks/"><![CDATA[<p>How and where do you buy your Bitcoin? Via a P2P marketplace, decentralized exchange, or rather through Coinbase, Binance and the likes? Most people do so via the latter ones. Centralized exchange platforms are compelling to most users as they are easy to use. They are usually in the top Google results, provide a fancy mobile device app and thus serve as a gateway into Bitcoin without having to delve into its technicalities. All of this comes at a price, which comes at trading privacy for ease of use. As most people keep their funds in the custodial wallet offered by the exchange, they also trade security for ease of use.</p>
 
-</figure>
+<p>One can argue this is all fine. The money on your bank account is also not truly your money, but only a claim against your bank. These centralized exchange platforms have essentially become the banks of Bitcoin. What is wrong with that, you might ask. The problem is that you should then expect these parties to implement bank-level security, but they don’t. And when things get ugly, this might leave you empty-handed. Which has happened many times: remember the Mt. Gox hack?</p>
 
-    </div>
-</div>
-<div class="caption">
-    A simple, elegant caption looks good between video rows, after each row, or doesn't have to be there at all.
-</div>]]></content><author><name></name></author><category term="sample-posts" /><category term="including" /><category term="audios" /><summary type="html"><![CDATA[this is what included audios could look like]]></summary></entry><entry><title type="html">a post with videos</title><link href="https://ksthk.github.io/blog/2023/videos/" rel="alternate" type="text/html" title="a post with videos" /><published>2023-04-24T21:01:00+00:00</published><updated>2023-04-24T21:01:00+00:00</updated><id>https://ksthk.github.io/blog/2023/videos</id><content type="html" xml:base="https://ksthk.github.io/blog/2023/videos/"><![CDATA[<p>This is an example post with videos. It supports local video files.</p>
+<p>We have looked at a corpus of 36 cyber security breaches of centralized Bitcoin exchange platforms over the last years. We have analyzed how these platforms were breached and also how this compares to security breaches of ‘traditional’ financial institutions. Yes, that is a bold comparison for a Bitcoin maximalist and purist. But as what has become of these big centralized platforms opposes the Bitcoin philosophy so much, they must at least be trustworthy custodians. Of course this is exactly why Trace Mayer launched Proof of Keys<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>. Not your keys, not your Bitcoin[^2]. On the upside, our research shows that things have gotten better over the last couple of years, but there is still room for improvement. The amount of funds that get exfiltrated using relatively low-level attack techniques, is unique to this ecosystem. But of course none of this would be feasible if people move their newly acquired BTC directly to a privately managed means of storage. If everyone acted accordingly, would centralized exchange platforms still exist?</p>
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        
+<p>This was a fun, quick analysis to pull off, which allowed me to tinker with the VERIS framework and the <a href="https://github.com/vz-risk/VCDB">VERIS toolbox</a> a bit. The paper got accepted into IEEE’s International Conference on Blockchain and Cryptocurrency, which will take place next month. If you’re interested in reading the full paper, it is provided <a href="https://krisk.io/publication/ieee-bitcoin-exchange-threats/ieee-bitcoin-exchange-threats.pdf">here</a>. Strong hands!</p>
 
-<figure>
+<p>https://www.proofofkeys.com/
+[^2]:aantonop. “Bitcoin Q&amp;A: How do I secure my bitcoin?” YouTube Video, 9:47. July 25, 2017. https://www.youtube.com/watch?v=vt-zXEsJ61U.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Proof of Keys: Annual January 3rd Proof of Keys Celebration of the Genesis Block. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name></name></author><category term="research-papers" /><category term="Bitcoin," /><category term="Hacks" /><summary type="html"><![CDATA[Analysis of Cyber Security Threats to Bitcoin Exchanges]]></summary></entry><entry><title type="html">ATT&amp;amp;CK Techniques and Trends in Windows Malware</title><link href="https://ksthk.github.io/blog/2019/malware/" rel="alternate" type="text/html" title="ATT&amp;amp;CK Techniques and Trends in Windows Malware" /><published>2019-09-02T12:53:09+00:00</published><updated>2019-09-02T12:53:09+00:00</updated><id>https://ksthk.github.io/blog/2019/malware</id><content type="html" xml:base="https://ksthk.github.io/blog/2019/malware/"><![CDATA[<p>Most cyber security practitioners are by now aware of the Mitre ATT&amp;CK framework and the tremendous potential it holds for increasing the understanding and mitigation of adversary TTPs. Within the Computer Science realm however, the framework has caught less altitude than in the infosec blogosphere. Also, in academia <a href="https://chrissanders.org/2019/05/infosec-mental-models/">mental models</a> for cyber security seem to be less of an discussion (or concern perhaps). In theory, there is no difference between theory and practice. But in practice, there is of course.</p>
 
-  
+<p>To introduce ATT&amp;CK to the scientific community as a useful standard, its usefulness needs to be proved in a scientifically sound way. I did this over the last couple of months, in which I have analyzed a labeled sample of 900+ unique families of Windows malware from 2003 until 2018 (thanks to Daniel Plohmann’s <a href="https://malpedia.caad.fkie.fraunhofer.de/">Malpedia</a>). This provides overview of established techniques within Windows malware and techniques which have seen increased adoption over recent years. Within the dataset, I have observed an increase in various techniques such as fileless execution, discovery of security software and DLL side-loading. A nice observation is that a (formerly) sophisticated technique, command and control (C&amp;C) over IPC named pipes, is getting adopted by less sophisticated actor groups. Malware authors are innovating techniques in order to bypass established defenses (doh).</p>
 
-  <video src="/assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4" class="img-fluid rounded z-depth-1" width="auto" height="auto" autoplay="" controls="" />
+<p>I wrote up the analysis results in a paper, using the uniform language offered by ATT&amp;CK. This all turned out quite nice, as this paper is <a href="http://securecomm2019.eai-conferences.org/">accepted</a> into the 15th International Conference on Security and Privacy in Communication Networks, which will be held in Orlando this October. A few days later I will also be presenting the results during ATT&amp;CKcon, Mitre’s ATT&amp;CK-focused <a href="https://www.mitre.org/attackcon">conference</a>.</p>
 
-  
+<p>So, where’s the beef?</p>
 
-</figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        
-
-<figure>
-
-  
-
-  <video src="/assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4" class="img-fluid rounded z-depth-1" width="auto" height="auto" controls="" />
-
-  
-
-</figure>
-
-    </div>
-</div>
-<div class="caption">
-    A simple, elegant caption looks good between video rows, after each row, or doesn't have to be there at all.
-</div>
-
-<p>It does also support embedding videos from different sources. Here are some examples:</p>
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        
-
-<figure>
-
-  
-
-  <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw" class="img-fluid rounded z-depth-1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" width="auto" height="auto" />
-
-  
-
-</figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        
-
-<figure>
-
-  
-
-  <iframe src="https://player.vimeo.com/video/524933864?h=1ac4fd9fb4&amp;title=0&amp;byline=0&amp;portrait=0" class="img-fluid rounded z-depth-1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" width="auto" height="auto" />
-
-  
-
-</figure>
-
-    </div>
-</div>]]></content><author><name></name></author><category term="sample-posts" /><category term="including" /><category term="videos" /><summary type="html"><![CDATA[this is what included videos could look like]]></summary></entry><entry><title type="html">displaying beautiful tables with Bootstrap Tables</title><link href="https://ksthk.github.io/blog/2023/tables/" rel="alternate" type="text/html" title="displaying beautiful tables with Bootstrap Tables" /><published>2023-03-20T18:37:00+00:00</published><updated>2023-03-20T18:37:00+00:00</updated><id>https://ksthk.github.io/blog/2023/tables</id><content type="html" xml:base="https://ksthk.github.io/blog/2023/tables/"><![CDATA[<p>Using markdown to display tables is easy. Just use the following syntax:</p>
-
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| Left aligned | Center aligned | Right aligned |
-| :----------- | :------------: | ------------: |
-| Left 1       | center 1       | right 1       |
-| Left 2       | center 2       | right 2       |
-| Left 3       | center 3       | right 3       |
-</code></pre></div></div>
-
-<p>That will generate:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">Left aligned</th>
-      <th style="text-align: center">Center aligned</th>
-      <th style="text-align: right">Right aligned</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">Left 1</td>
-      <td style="text-align: center">center 1</td>
-      <td style="text-align: right">right 1</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Left 2</td>
-      <td style="text-align: center">center 2</td>
-      <td style="text-align: right">right 2</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Left 3</td>
-      <td style="text-align: center">center 3</td>
-      <td style="text-align: right">right 3</td>
-    </tr>
-  </tbody>
-</table>
-
-<p></p>
-
-<p>It is also possible to use HTML to display tables. For example, the following HTML code will display a table with <a href="https://bootstrap-table.com/">Bootstrap Table</a>, loaded from a JSON file:</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;table</span>
-  <span class="na">id=</span><span class="s">"table"</span>
-  <span class="na">data-toggle=</span><span class="s">"table"</span>
-  <span class="na">data-url=</span><span class="s">"{{ '/assets/json/table_data.json' | relative_url }}"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;thead&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"id"</span><span class="nt">&gt;</span>ID<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"name"</span><span class="nt">&gt;</span>Item Name<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"price"</span><span class="nt">&gt;</span>Item Price<span class="nt">&lt;/th&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-  <span class="nt">&lt;/thead&gt;</span>
-<span class="nt">&lt;/table&gt;</span>
-</code></pre></div></div>
-
-<table data-toggle="table" data-url="/assets/json/table_data.json">
-  <thead>
-    <tr>
-      <th data-field="id">ID</th>
-      <th data-field="name">Item Name</th>
-      <th data-field="price">Item Price</th>
-    </tr>
-  </thead>
-</table>
-
-<p></p>
-
-<p>By using <a href="https://bootstrap-table.com/">Bootstrap Table</a> it is possible to create pretty complex tables, with pagination, search, and more. For example, the following HTML code will display a table, loaded from a JSON file, with pagination, search, checkboxes, and header/content alignment. For more information, check the <a href="https://examples.bootstrap-table.com/index.html">documentation</a>.</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;table</span>
-  <span class="na">data-click-to-select=</span><span class="s">"true"</span>
-  <span class="na">data-height=</span><span class="s">"460"</span>
-  <span class="na">data-pagination=</span><span class="s">"true"</span>
-  <span class="na">data-search=</span><span class="s">"true"</span>
-  <span class="na">data-toggle=</span><span class="s">"table"</span>
-  <span class="na">data-url=</span><span class="s">"{{ '/assets/json/table_data.json' | relative_url }}"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;thead&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-checkbox=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"id"</span> <span class="na">data-halign=</span><span class="s">"left"</span> <span class="na">data-align=</span><span class="s">"center"</span> <span class="na">data-sortable=</span><span class="s">"true"</span><span class="nt">&gt;</span>ID<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"name"</span> <span class="na">data-halign=</span><span class="s">"center"</span> <span class="na">data-align=</span><span class="s">"right"</span> <span class="na">data-sortable=</span><span class="s">"true"</span><span class="nt">&gt;</span>Item Name<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"price"</span> <span class="na">data-halign=</span><span class="s">"right"</span> <span class="na">data-align=</span><span class="s">"left"</span> <span class="na">data-sortable=</span><span class="s">"true"</span><span class="nt">&gt;</span>Item Price<span class="nt">&lt;/th&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-  <span class="nt">&lt;/thead&gt;</span>
-<span class="nt">&lt;/table&gt;</span>
-</code></pre></div></div>
-
-<table data-click-to-select="true" data-height="460" data-pagination="true" data-search="true" data-toggle="table" data-url="/assets/json/table_data.json">
-  <thead>
-    <tr>
-      <th data-checkbox="true"></th>
-      <th data-field="id" data-halign="left" data-align="center" data-sortable="true">ID</th>
-      <th data-field="name" data-halign="center" data-align="right" data-sortable="true">Item Name</th>
-      <th data-field="price" data-halign="right" data-align="left" data-sortable="true">Item Price</th>
-    </tr>
-  </thead>
-</table>]]></content><author><name></name></author><category term="sample-posts" /><summary type="html"><![CDATA[an example of how to use Bootstrap Tables]]></summary></entry><entry><title type="html">a post with table of contents</title><link href="https://ksthk.github.io/blog/2023/table-of-contents/" rel="alternate" type="text/html" title="a post with table of contents" /><published>2023-03-20T15:59:00+00:00</published><updated>2023-03-20T15:59:00+00:00</updated><id>https://ksthk.github.io/blog/2023/table-of-contents</id><content type="html" xml:base="https://ksthk.github.io/blog/2023/table-of-contents/"><![CDATA[<p>This post shows how to add a table of contents in the beginning of the post.</p>
-
-<h2 id="adding-a-table-of-contents">Adding a Table of Contents</h2>
-
-<p>To add a table of contents to a post, simply add</p>
-<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">toc</span><span class="pi">:</span>
-  <span class="na">beginning</span><span class="pi">:</span> <span class="kc">true</span>
-</code></pre></div></div>
-<p>to the front matter of the post. The table of contents will be automatically generated from the headings in the post.</p>
-
-<h3 id="example-of-sub-heading-1">Example of Sub-Heading 1</h3>
-
-<p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>
-
-<h3 id="example-of-another-sub-heading-1">Example of another Sub-Heading 1</h3>
-
-<p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>
-
-<h2 id="table-of-contents-options">Table of Contents Options</h2>
-
-<p>If you want to learn more about how to customize the table of contents, you can check the <a href="https://github.com/toshimaru/jekyll-toc">jekyll-toc</a> repository.</p>
-
-<h3 id="example-of-sub-heading-2">Example of Sub-Heading 2</h3>
-
-<p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>
-
-<h3 id="example-of-another-sub-heading-2">Example of another Sub-Heading 2</h3>
-
-<p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>]]></content><author><name></name></author><category term="sample-posts" /><category term="toc" /><summary type="html"><![CDATA[an example of a blog post with table of contents]]></summary></entry><entry><title type="html">a post with giscus comments</title><link href="https://ksthk.github.io/blog/2022/giscus-comments/" rel="alternate" type="text/html" title="a post with giscus comments" /><published>2022-12-10T15:59:00+00:00</published><updated>2022-12-10T15:59:00+00:00</updated><id>https://ksthk.github.io/blog/2022/giscus-comments</id><content type="html" xml:base="https://ksthk.github.io/blog/2022/giscus-comments/"><![CDATA[<p>This post shows how to add GISCUS comments.</p>]]></content><author><name></name></author><category term="sample-posts" /><category term="external-services" /><summary type="html"><![CDATA[an example of a blog post with giscus comments]]></summary></entry><entry><title type="html">Displaying External Posts on Your al-folio Blog</title><link href="https://ksthk.github.io/blog/2022/displaying-external-posts-on-your-al-folio-blog/" rel="alternate" type="text/html" title="Displaying External Posts on Your al-folio Blog" /><published>2022-04-23T23:20:09+00:00</published><updated>2022-04-23T23:20:09+00:00</updated><id>https://ksthk.github.io/blog/2022/displaying-external-posts-on-your-al-folio-blog</id><content type="html" xml:base="https://ksthk.github.io/blog/2022/displaying-external-posts-on-your-al-folio-blog/"><![CDATA[]]></content><author><name></name></author></entry><entry><title type="html">a post with redirect</title><link href="https://ksthk.github.io/blog/2022/redirect/" rel="alternate" type="text/html" title="a post with redirect" /><published>2022-02-01T17:39:00+00:00</published><updated>2022-02-01T17:39:00+00:00</updated><id>https://ksthk.github.io/blog/2022/redirect</id><content type="html" xml:base="https://ksthk.github.io/blog/2022/redirect/"><![CDATA[<p>Redirecting to another page.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[you can also redirect to assets like pdf]]></summary></entry><entry><title type="html">a post with diagrams</title><link href="https://ksthk.github.io/blog/2021/diagrams/" rel="alternate" type="text/html" title="a post with diagrams" /><published>2021-07-04T17:39:00+00:00</published><updated>2021-07-04T17:39:00+00:00</updated><id>https://ksthk.github.io/blog/2021/diagrams</id><content type="html" xml:base="https://ksthk.github.io/blog/2021/diagrams/"><![CDATA[<p>This theme supports generating various diagrams from a text description using <a href="https://github.com/zhustec/jekyll-diagrams" target="\_blank">jekyll-diagrams</a> plugin.
-Below, we generate a few examples of such diagrams using languages such as <a href="https://mermaid-js.github.io/mermaid/" target="\_blank">mermaid</a>, <a href="https://plantuml.com/" target="\_blank">plantuml</a>, <a href="https://vega.github.io/vega-lite/" target="\_blank">vega-lite</a>, etc.</p>
-
-<p><strong>Note:</strong> different diagram-generation packages require external dependencies to be installed on your machine.
-Also, be mindful of that because of diagram generation the fist time you build your Jekyll website after adding new diagrams will be SLOW.
-For any other details, please refer to <a href="https://github.com/zhustec/jekyll-diagrams" target="\_blank">jekyll-diagrams</a> README.</p>
-
-<h2 id="mermaid">Mermaid</h2>
-
-<p>Install mermaid using <code class="language-plaintext highlighter-rouge">node.js</code> package manager <code class="language-plaintext highlighter-rouge">npm</code> by running the following command:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install</span> <span class="nt">-g</span> mermaid.cli
-</code></pre></div></div>
-
-<p>The diagram below was generated by the following code:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% mermaid %}
-sequenceDiagram
-    participant John
-    participant Alice
-    Alice-&gt;&gt;John: Hello John, how are you?
-    John--&gt;&gt;Alice: Great!
-{% endmermaid %}
-</code></pre></div></div>
-
-<div class="jekyll-diagrams diagrams mermaid">
-  <svg id="mermaid-1684839117401" width="100%" xmlns="http://www.w3.org/2000/svg" height="100%" style="max-width:450px;" viewBox="-50 -10 450 231"><style>#mermaid-1684839117401 .label{font-family:trebuchet ms,verdana,arial;color:#333}#mermaid-1684839117401 .node circle,#mermaid-1684839117401 .node ellipse,#mermaid-1684839117401 .node polygon,#mermaid-1684839117401 .node rect{fill:#ececff;stroke:#9370db;stroke-width:1px}#mermaid-1684839117401 .node.clickable{cursor:pointer}#mermaid-1684839117401 .arrowheadPath{fill:#333}#mermaid-1684839117401 .edgePath .path{stroke:#333;stroke-width:1.5px}#mermaid-1684839117401 .edgeLabel{background-color:#e8e8e8}#mermaid-1684839117401 .cluster rect{fill:#ffffde!important;stroke:#aa3!important;stroke-width:1px!important}#mermaid-1684839117401 .cluster text{fill:#333}#mermaid-1684839117401 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:trebuchet ms,verdana,arial;font-size:12px;background:#ffffde;border:1px solid #aa3;border-radius:2px;pointer-events:none;z-index:100}#mermaid-1684839117401 .actor{stroke:#ccf;fill:#ececff}#mermaid-1684839117401 text.actor{fill:#000;stroke:none}#mermaid-1684839117401 .actor-line{stroke:grey}#mermaid-1684839117401 .messageLine0{marker-end:"url(#arrowhead)"}#mermaid-1684839117401 .messageLine0,#mermaid-1684839117401 .messageLine1{stroke-width:1.5;stroke-dasharray:"2 2";stroke:#333}#mermaid-1684839117401 #arrowhead{fill:#333}#mermaid-1684839117401 #crosshead path{fill:#333!important;stroke:#333!important}#mermaid-1684839117401 .messageText{fill:#333;stroke:none}#mermaid-1684839117401 .labelBox{stroke:#ccf;fill:#ececff}#mermaid-1684839117401 .labelText,#mermaid-1684839117401 .loopText{fill:#000;stroke:none}#mermaid-1684839117401 .loopLine{stroke-width:2;stroke-dasharray:"2 2";marker-end:"url(#arrowhead)";stroke:#ccf}#mermaid-1684839117401 .note{stroke:#aa3;fill:#fff5ad}#mermaid-1684839117401 .noteText{fill:#000;stroke:none;font-family:trebuchet ms,verdana,arial;font-size:14px}#mermaid-1684839117401 .section{stroke:none;opacity:.2}#mermaid-1684839117401 .section0{fill:rgba(102,102,255,.49)}#mermaid-1684839117401 .section2{fill:#fff400}#mermaid-1684839117401 .section1,#mermaid-1684839117401 .section3{fill:#fff;opacity:.2}#mermaid-1684839117401 .sectionTitle0,#mermaid-1684839117401 .sectionTitle1,#mermaid-1684839117401 .sectionTitle2,#mermaid-1684839117401 .sectionTitle3{fill:#333}#mermaid-1684839117401 .sectionTitle{text-anchor:start;font-size:11px;text-height:14px}#mermaid-1684839117401 .grid .tick{stroke:#d3d3d3;opacity:.3;shape-rendering:crispEdges}#mermaid-1684839117401 .grid path{stroke-width:0}#mermaid-1684839117401 .today{fill:none;stroke:red;stroke-width:2px}#mermaid-1684839117401 .task{stroke-width:2}#mermaid-1684839117401 .taskText{text-anchor:middle;font-size:11px}#mermaid-1684839117401 .taskTextOutsideRight{fill:#000;text-anchor:start;font-size:11px}#mermaid-1684839117401 .taskTextOutsideLeft{fill:#000;text-anchor:end;font-size:11px}#mermaid-1684839117401 .taskText0,#mermaid-1684839117401 .taskText1,#mermaid-1684839117401 .taskText2,#mermaid-1684839117401 .taskText3{fill:#fff}#mermaid-1684839117401 .task0,#mermaid-1684839117401 .task1,#mermaid-1684839117401 .task2,#mermaid-1684839117401 .task3{fill:#8a90dd;stroke:#534fbc}#mermaid-1684839117401 .taskTextOutside0,#mermaid-1684839117401 .taskTextOutside1,#mermaid-1684839117401 .taskTextOutside2,#mermaid-1684839117401 .taskTextOutside3{fill:#000}#mermaid-1684839117401 .active0,#mermaid-1684839117401 .active1,#mermaid-1684839117401 .active2,#mermaid-1684839117401 .active3{fill:#bfc7ff;stroke:#534fbc}#mermaid-1684839117401 .activeText0,#mermaid-1684839117401 .activeText1,#mermaid-1684839117401 .activeText2,#mermaid-1684839117401 .activeText3{fill:#000!important}#mermaid-1684839117401 .done0,#mermaid-1684839117401 .done1,#mermaid-1684839117401 .done2,#mermaid-1684839117401 .done3{stroke:grey;fill:#d3d3d3;stroke-width:2}#mermaid-1684839117401 .doneText0,#mermaid-1684839117401 .doneText1,#mermaid-1684839117401 .doneText2,#mermaid-1684839117401 .doneText3{fill:#000!important}#mermaid-1684839117401 .crit0,#mermaid-1684839117401 .crit1,#mermaid-1684839117401 .crit2,#mermaid-1684839117401 .crit3{stroke:#f88;fill:red;stroke-width:2}#mermaid-1684839117401 .activeCrit0,#mermaid-1684839117401 .activeCrit1,#mermaid-1684839117401 .activeCrit2,#mermaid-1684839117401 .activeCrit3{stroke:#f88;fill:#bfc7ff;stroke-width:2}#mermaid-1684839117401 .doneCrit0,#mermaid-1684839117401 .doneCrit1,#mermaid-1684839117401 .doneCrit2,#mermaid-1684839117401 .doneCrit3{stroke:#f88;fill:#d3d3d3;stroke-width:2;cursor:pointer;shape-rendering:crispEdges}#mermaid-1684839117401 .activeCritText0,#mermaid-1684839117401 .activeCritText1,#mermaid-1684839117401 .activeCritText2,#mermaid-1684839117401 .activeCritText3,#mermaid-1684839117401 .doneCritText0,#mermaid-1684839117401 .doneCritText1,#mermaid-1684839117401 .doneCritText2,#mermaid-1684839117401 .doneCritText3{fill:#000!important}#mermaid-1684839117401 .titleText{text-anchor:middle;font-size:18px;fill:#000}#mermaid-1684839117401 g.classGroup text{fill:#9370db;stroke:none;font-family:trebuchet ms,verdana,arial;font-size:10px}#mermaid-1684839117401 g.classGroup rect{fill:#ececff;stroke:#9370db}#mermaid-1684839117401 g.classGroup line{stroke:#9370db;stroke-width:1}#mermaid-1684839117401 .classLabel .box{stroke:none;stroke-width:0;fill:#ececff;opacity:.5}#mermaid-1684839117401 .classLabel .label{fill:#9370db;font-size:10px}#mermaid-1684839117401 .relation{stroke:#9370db;stroke-width:1;fill:none}#mermaid-1684839117401 #compositionEnd,#mermaid-1684839117401 #compositionStart{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1684839117401 #aggregationEnd,#mermaid-1684839117401 #aggregationStart{fill:#ececff;stroke:#9370db;stroke-width:1}#mermaid-1684839117401 #dependencyEnd,#mermaid-1684839117401 #dependencyStart,#mermaid-1684839117401 #extensionEnd,#mermaid-1684839117401 #extensionStart{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1684839117401 .branch-label,#mermaid-1684839117401 .commit-id,#mermaid-1684839117401 .commit-msg{fill:#d3d3d3;color:#d3d3d3}</style><style>#mermaid-1684839117401 {
-    color: rgb(0, 0, 0);
-    font: normal normal 400 normal 16px / normal "Times New Roman";
-  }</style><g></g><g><line id="actor0" x1="75" y1="5" x2="75" y2="220" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="0" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="75" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle;"><tspan x="75" dy="0">John</tspan></text></g><g><line id="actor1" x1="275" y1="5" x2="275" y2="220" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="200" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="275" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle;"><tspan x="275" dy="0">Alice</tspan></text></g><defs><marker id="arrowhead" refX="5" refY="2" markerWidth="6" markerHeight="4" orient="auto"><path d="M 0,0 V 4 L6,2 Z"></path></marker></defs><defs><marker id="crosshead" markerWidth="15" markerHeight="8" orient="auto" refX="16" refY="4"><path fill="black" stroke="#000000" stroke-width="1px" d="M 9,2 V 6 L16,4 Z" style="stroke-dasharray: 0, 0;"></path><path fill="none" stroke="#000000" stroke-width="1px" d="M 0,1 L 6,7 M 6,1 L 0,7" style="stroke-dasharray: 0, 0;"></path></marker></defs><g><text x="175" y="93" class="messageText" style="text-anchor: middle;">Hello John, how are you?</text><line x1="275" y1="100" x2="75" y2="100" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="175" y="128" class="messageText" style="text-anchor: middle;">Great!</text><line x1="75" y1="135" x2="275" y2="135" class="messageLine1" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="stroke-dasharray: 3, 3; fill: none;"></line></g><g><rect x="0" y="155" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="75" y="187.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle;"><tspan x="75" dy="0">John</tspan></text></g><g><rect x="200" y="155" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="275" y="187.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle;"><tspan x="275" dy="0">Alice</tspan></text></g></svg>
-</div>]]></content><author><name></name></author><summary type="html"><![CDATA[an example of a blog post with diagrams]]></summary></entry></feed>
+<p>All of this results in the following graphical representation of most commonly implemented malware techniques (<a href="attack_poster.pdf">click</a> for high-resolution version). For those interested in reading the full paper, it is available for download <a href="malware.pdf">here</a>. If you have any questions or remarks, just get in touch on the socials or via the contact form. I am happy to hear from you.</p>]]></content><author><name></name></author><category term="research-papers" /><category term="ATT&amp;CK" /><category term="Malware" /><summary type="html"><![CDATA[Most cyber security practitioners are by now aware of the Mitre ATT&amp;CK framework and the tremendous potential it holds for increasing the understanding and mitigation of adversary TTPs. Within the Computer Science realm however, the framework has caught less altitude than in the infosec blogosphere. Also, in academia mental models for cyber security seem to be less of an discussion (or concern perhaps). In theory, there is no difference between theory and practice. But in practice, there is of course.]]></summary></entry></feed>

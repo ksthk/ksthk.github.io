@@ -10,10 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>2022 | Kris Oosthoek PhD</title>
+    <title>What's wrong with Cyber Threat Intelligence | Kris Oosthoek PhD</title>
     <meta name="author" content="Kris  Oosthoek">
-    <meta name="description" content="Academic profile page of Kris Oosthoek.
-">
+    <meta name="description" content="Summary - Position Paper on the Challenges of the CTI Field">
     <meta name="keywords" content="kris, oosthoek, phd, cyber, security, bitcoin, crypto">
 
 
@@ -39,7 +38,7 @@
     <link rel="shortcut icon" href="/assets/img/icon.png">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://ksthk.github.io/blog/2022/">
+    <link rel="canonical" href="https://ksthk.github.io/blog/2020/whats-wrong-with-cti/">
 
     <!-- Dark Mode -->
     
@@ -114,27 +113,116 @@
     <!-- Content -->
     <div class="container mt-5">
       
-        <div class="post">
+        <!-- _layouts/post.html -->
+
+<div class="post">
 
   <header class="post-header">
-    <h1 class="post-title"> <i class="fas fa-calendar fa-sm"></i> 2022 </h1>
-    <p class="post-description"> an archive of posts from this year </p>
+    <h1 class="post-title">What's wrong with Cyber Threat Intelligence</h1>
+    <p class="post-meta">July 14, 2020</p>
+    <p class="post-tags">
+      <a href="/blog/2020"> <i class="fas fa-calendar fa-sm"></i> 2020 </a>
+        ·  
+        <a href="/blog/category/research-papers">
+          <i class="fas fa-tag fa-sm"></i> research-papers</a>  
+          
+
+    </p>
   </header>
 
-  <article>
-    <div class="table-responsive">
-      <table class="table table-sm table-borderless">
-        
-        <tr>
-          <th scope="row">Apr 23, 2022</th>
-          <td>
-              <a class="post-link" href="/blog/2022/displaying-external-posts-on-your-al-folio-blog/">Displaying External Posts on Your al-folio Blog</a>
-          </td>
-        </tr>
-      
-      </table>
+  <article class="post-content">
+    
+    <div id="markdown-content">
+      <p>Over the last decade the field of Cyber Threat Intelligence (CTI) has emerged, which aims to preempt cyber threats by combining aspects from Computer Science and the Intelligence field. Something like Risk Management, but less dusty, practical, operational and able to deal with a highly dynamic environment. Many former antivirus vendors have shifted gears to become commercial intelligence providers, conducting what is effectively counter intelligence analysis against cyber threat actors. As such, CTI has taken a significant role in daily cyber security practice.</p>
+
+<p>Together with <a href="https://www.cyber-threat-intelligence.com/people/christian" rel="external nofollow noopener" target="_blank">Christian Doerr</a>, I have written a position paper arguing that CTI is a valuable addition to the cyber security field, but it is still in its infancy. Because of that, it often delivers flawed analysis. If you’re a CTI analyst, you might argue this is all pretty obvious stuff, but it isn’t. From a scientific perspective, most of our practice finds little empirical support and much of what we take as ‘facts’ is really not more than an opinion.</p>
+
+<p>The paper was peer-reviewed by the International Journal of Intelligence and CounterIntelligence and has been published today. It is released as Open Access, so no annoying academic paywall and available to read <a href="https://doi.org/10.1080/08850607.2020.1780062" rel="external nofollow noopener" target="_blank">here</a>. It includes an overview of what CTI is, its origination and the challenges and potential it holds. As usual for a position paper, pointing out the field’s challenges serves to identify areas for future research. CTI is rich in tools and technological knowledge, but poor on standardization and methodology. A better product follows a better process.</p>
+
+<p>Below a quick rundown of the challenges identified in our analysis, which are discussed in more length in the <a href="https://doi.org/10.1080/08850607.2020.1780062" rel="external nofollow noopener" target="_blank">paper</a>:</p>
+
+<ul>
+  <li>
+<strong>CTI is lacking methodology:</strong> Sherman Kent’s <a href="https://www.cia.gov/library/kent-center-occasional-papers/vol1no5.htm" rel="external nofollow noopener" target="_blank">Analytic Doctrine</a><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>, Richards Heuer’s <a href="https://www.cia.gov/library/center-for-the-study-of-intelligence/csi-publications/books-and-monographs/psychology-of-intelligence-analysis" rel="external nofollow noopener" target="_blank">Psychology of Intelligence Analysis</a><sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> and Structured Analytic Techniques<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup>. You’ve probably heard about them. Many conference presentations provide lip service to these works to indicate scientific rigor which really isn’t there. Who does ACH in practice? Almost no-one. Actually, its effectiveness has proven to be <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/acp.3550" rel="external nofollow noopener" target="_blank">questionable</a><sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup> at best.</li>
+  <li>
+<strong>CTI is shared but hardly being used:</strong> we go into the relationship between the hacks of the Democratic National Committee and the German Bundestag and how this is actually a case of flawed CTI. Furthermore, we discuss the complications for sharing due to the Traffic Light Protocol and sharing communities such as ISACs.</li>
+  <li>
+<strong>CTI is generally of low quality:</strong> indicator feeds report malicious activity months after the first observance and are biased towards specific countries. Most sharing takes place in the bottom of the <a href="http://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html" rel="external nofollow noopener" target="_blank">Pyramid of Pain</a><sup id="fnref:5" role="doc-noteref"><a href="#fn:5" class="footnote" rel="footnote">5</a></sup>. Complete TTPs are hard to share in a machine-readable way. Mitre ATT&amp;CK is a first step in the right direction, but as a field we still need to progress significantly towards standardisation. We need to reach our full potential, or much of our initiatives will end up as yet another compliance effort providing limited value.</li>
+  <li>
+<strong>CTI vendors are untransparent in their supply:</strong> do you know how your vendor gets to a certain assessment? How their raw intel was sourced? How their sensor base is distributed and thus potentially biased? Probably not. While sources do not need to be identified, it is currently unclear in many cases when a threat is novel or already has been reported on by another party under a different label. Vendor reports being more marketing material than actual intelligence doesn’t help here.</li>
+  <li>
+<strong>CTI is too biased:</strong> from a commercial perspective, vendors like to focus on the big state actors, which are actually a less likely threat for many of us than low-level cyber-criminal actors. The bulk of the vendor reporting focuses on a very small subset of threats which make for entertaining reading, but isn’t very relevant to most of our daily practice.</li>
+  <li>
+<strong>CTI attribution is difficult:</strong> Fancy Bear, APT-28, Sofacy, STRONTIUM, Sednit, Tsar Team, Swallowtail, Pawn Storm, TG-4127, Grizzly Steppe. Do you still follow this? These are all names for the same actor group. And while attribution is difficult and in many cases not more than a marketing stunt, which is a different ball game. Attribution should be left to government intelligence agencies.</li>
+</ul>
+
+<p>Needless to say the above is a clickbaity representation of the more nuanced discussion in our paper, available for everyone <a href="https://doi.org/10.1080/08850607.2020.1780062" rel="external nofollow noopener" target="_blank">here</a>. For the <a href="https://cyber-threat-intelligence.com" rel="external nofollow noopener" target="_blank">lab</a>, this is where we hope to contribute with our research in the coming years. Because as indicated in the latter part of the paper, it isn’t all that bad as the CTI field has already contributed much to cyber security and remains one of the most promising concepts for the years to come. Yet we improve through critical introspection and self-examination, not through praise and worship of established phenomenons.</p>
+
+<p><img src="cozyfancybear.jpg" alt="Bears all the way down"></p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Davis, Jack. Sherman Kent and the profession of intelligence analysis. Central Intelligence Agency Washington DC, 2002. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>Heuer, Richards J. Psychology of intelligence analysis. Center for the Study of Intelligence, 1999. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>Heuer Jr, Richards J., Richards J. Heuer, and Randolph H. Pherson. Structured analytic techniques for intelligence analysis. Cq Press, 2010. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnote">
+      <p>Dhami, Mandeep K., Ian K. Belton, and David R. Mandel. “The “analysis of competing hypotheses” in intelligence analysis.” Applied Cognitive Psychology 33.6 (2019): 1080-1090. <a href="#fnref:4" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:5" role="doc-endnote">
+      <p>Bianco, David. “The pyramid of pain.” Enterprise Detection &amp; Response (2013). <a href="#fnref:5" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+  </ol>
+</div>
+
     </div>
   </article>
+
+
+  
+    
+    <br>
+    <hr>
+    <br>
+    <ul class="list-disc pl-8"></ul>
+
+    <!-- Adds related posts to the end of an article -->
+    <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2>
+    <p class="mb-2">Here are some more articles you might like to read next:</p>
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2022/displaying-external-posts-on-your-al-folio-blog/">Displaying External Posts on Your al-folio Blog</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2021/actionable-intelligence/">Actionable Intelligence</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2020/security/">Security Recommendations for Bitcoin hodlers</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2020/bnr-cryptocast/">BNR Cryptocast</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2020/hacks/">From Hodl to Heist</a>
+  </li>
 
 </div>
 
