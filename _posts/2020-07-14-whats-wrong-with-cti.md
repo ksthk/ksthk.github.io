@@ -11,7 +11,7 @@ related_posts: false
 
 Over the last decade the field of Cyber Threat Intelligence (CTI) has emerged, which aims to preempt cyber threats by combining aspects from Computer Science and the Intelligence field. Something like Risk Management, but less dusty, practical, operational and able to deal with a highly dynamic environment. Many former antivirus vendors have shifted gears to become commercial intelligence providers, conducting what is effectively counter intelligence analysis against cyber threat actors. As such, CTI has taken a significant role in daily cyber security practice.
 
-Together with [Christian Doerr](https://www.cyber-threat-intelligence.com/people/christian), I have written a position paper arguing that CTI is a valuable addition to the cyber security field, but it is still in its infancy. Because of that, it often delivers flawed analysis. If you're a CTI analyst, you might argue this is all pretty obvious stuff, but it isn't. From a scientific perspective, most of our practice finds little empirical support and much of what we take as 'facts' is really not more than an opinion.
+Together with Christian Doerr, I have written a position paper arguing that CTI is a valuable addition to the cyber security field, but it is still in its infancy. Because of that, it often delivers flawed analysis. If you're a CTI analyst, you might argue this is all pretty obvious stuff, but it isn't. From a scientific perspective, most of our practice finds little empirical support and much of what we take as 'facts' is really not more than an opinion.
 
 The paper was peer-reviewed by the International Journal of Intelligence and CounterIntelligence and has been published today. It is released as Open Access, so no annoying academic paywall and available to read [here](https://doi.org/10.1080/08850607.2020.1780062). It includes an overview of what CTI is, its origination and the challenges and potential it holds. As usual for a position paper, pointing out the field's challenges serves to identify areas for future research. CTI is rich in tools and technological knowledge, but poor on standardization and methodology. A better product follows a better process.
 
@@ -26,7 +26,7 @@ Below a quick rundown of the challenges identified in our analysis, which are di
 
 Needless to say the above is a clickbaity representation of the more nuanced discussion in our paper, available for everyone [here](https://doi.org/10.1080/08850607.2020.1780062). For the [lab](https://cyber-threat-intelligence.com), this is where we hope to contribute with our research in the coming years. Because as indicated in the latter part of the paper, it isn't all that bad as the CTI field has already contributed much to cyber security and remains one of the most promising concepts for the years to come. Yet we improve through critical introspection and self-examination, not through praise and worship of established phenomenons.
 
-![Bears all the way down](cozyfancybear.jpg)
+![Bears all the way down](/assets/img/cozyfancybear.jpg)
 
 [^1]:Davis, Jack. Sherman Kent and the profession of intelligence analysis. Central Intelligence Agency Washington DC, 2002.
 [^2]:Heuer, Richards J. Psychology of intelligence analysis. Center for the Study of Intelligence, 1999.

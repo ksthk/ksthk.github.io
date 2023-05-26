@@ -18,7 +18,7 @@ Intelligence is mere information if it isn’t actionable. We need interpretatio
 **Actioning the Intelligence Cycle**
 We are all familiar with the Intelligence Cycle as originally put out by the US Department of Defense. A common complaint is that it is too abstract to serve as a basis for a CTI practice. For this reason, we provide practical recommendations per phase of the Intelligence Cycle.
 
-![The (Actionable) Intelligence Cycle](cycle.png)
+![The (Actionable) Intelligence Cycle](/assets/img/cycle.png)
 
 **Planning and direction**
 It’s easy to hoard a firehose of whatever data is available, free feeds or the daily stream of reports. This also is a sure-fire way to an expensive SIEM bill for your SOC, and cognitive overload for your analysts. Consider only collecting data against pre-set goals based on stakeholder requirements, optionally formally established and signed-off as (Priority) Intelligence Requirements. Examples are threats specific to network infrastructure components or unique to your organisation’s industry vertical, which may be collected via feeds or reports. In case you decide to procure data to fulfil one or more requirements, be aware that because of sharing agreements between different vendors, you could end up paying for the same intelligence twice [^2]. Inform yourself about the origin of data upfront. From what type of sensors is the data sourced, where are these located? How much data is unique proportionally to what you’re already collecting? What is its half-life according to the provider?
