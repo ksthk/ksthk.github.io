@@ -8,7 +8,7 @@ categories: research-promotion
 thumbnail: assets/img/thumbnail_bnr.png
 related_posts: false
 ---
-{% twitter https://twitter.com/cryptocastnl/status/1245801043948118018 }
+{% twitter https://twitter.com/cryptocastnl/status/1245801043948118018 %}
 
 Today I was a guest on the Cryptocast, a podcast primarily on Bitcoin by Dutch radio station BNR Newsradio. Regularly episodes are recorded in the BNR studios, but this one ran remotely due to the social distancing measures currently in force to tackle COVID-19.
 
