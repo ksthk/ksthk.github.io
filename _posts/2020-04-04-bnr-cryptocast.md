@@ -5,7 +5,8 @@ date: 2020-04-04 13:00:57
 description:
 tags: Cryptocast, Bitcoin, Hacks
 categories: research-promotion
-thumbnail: assets/img/thumbnail_bnr.jpg
+thumbnail: assets/img/thumbnail_bnr.png
+related_posts: false
 ---
 {{< tweet 1245801043948118018 >}}
 

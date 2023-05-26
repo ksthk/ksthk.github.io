@@ -4,7 +4,9 @@ title:  What's wrong with Cyber Threat Intelligence
 date: 2020-07-14 13:03:20
 description: Summary - Position Paper on the Challenges of the CTI Field
 categories: research-papers
+tags: cti
 thumbnail: assets/img/thumbnail_cti2.jpg
+related_posts: false
 ---
 
 Over the last decade the field of Cyber Threat Intelligence (CTI) has emerged, which aims to preempt cyber threats by combining aspects from Computer Science and the Intelligence field. Something like Risk Management, but less dusty, practical, operational and able to deal with a highly dynamic environment. Many former antivirus vendors have shifted gears to become commercial intelligence providers, conducting what is effectively counter intelligence analysis against cyber threat actors. As such, CTI has taken a significant role in daily cyber security practice.

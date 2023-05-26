@@ -6,6 +6,7 @@ description: How to make Cyber Threat Intelligence work for you
 tags: cti
 categories: research-papers
 thumbnail: assets/img/thumbnail_cti.jpg
+related_posts: false
 ---
 Cyber Threat Intelligence (CTI) produces evidence-based knowledge on cyber threats and their implications within their relevant context, including actionable advice. With the technical landmark of the APT-1 report in 2013, CTI took off and it has contributed to society (Bellingcat’s MH-17 investigation) and diplomacy (Joint EU Diplomatic Response to Malicious Cyber Activities).
 
